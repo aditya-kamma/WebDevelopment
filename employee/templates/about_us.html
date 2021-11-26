@@ -1,0 +1,215 @@
+{% load static %}
+{% include 'header.html' %}
+{% include 'navigation.html' %}
+
+
+
+{% block body %}
+
+<style>
+
+    body {
+  font-family: Arial, Helvetica, sans-serif;
+  margin: 0;
+}
+
+html {
+  box-sizing: border-box;
+}
+
+*, *:before, *:after {
+  box-sizing: inherit;
+}
+
+.column {
+  float: left;
+  width: 33.3%;
+  margin-bottom: 16px;
+  padding: 0 8px;
+}
+
+.card {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  margin: 8px;
+}
+
+.about-section {
+  padding: 50px;
+  text-align: center;
+  background-color: #474e5d;
+  color: white;
+  
+}
+
+.container {
+  padding: 0 16px;
+}
+
+.container::after, .row::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+
+.title {
+  color: grey;
+}
+
+.button {
+  border: none;
+  outline: 0;
+  display: inline-block;
+  padding: 8px;
+  color: white;
+  background-color: #000;
+  text-align: center;
+  cursor: pointer;
+  width: 100%;
+}
+
+.button:hover {
+  background-color: #555;
+}
+
+@media screen and (max-width: 650px) {
+  .column {
+    width: 100%;
+    display: block;
+  }
+}
+</style>
+ 
+<link rel="stylesheet" href="	https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.6.3/css/all.css">
+
+
+<div class="about-section">
+    <h1>Looking for our Product Support?</h1>
+    <p>We love hearing from you. If you have questions or just want more information on our products, our team is here to help.</p>
+    <p>Feel free to contact us. we are available 24*7.</p>
+  </div>
+  
+  <h2 style="text-align:center " class="text-white" >Our Team for Product Support</h2>
+  <div class="row">
+    <div class="column">
+      <div class="card">
+        <img src="/static/images/Aditya.jpg" alt="Jane" style="width:50%; margin-left: 100px;">
+        <div class="container">
+          <h2 class="text-center">Aditya Kamma</h2>
+          <p class="title text-center">Marketing Head</p>
+          <p class=" text-center">Crafting strategies for all Marketing teams, including Digital, Advertising, Communications and Creative. Preparing and managing monthly, quarterly and annual budgets for the Marketing department.</p>
+          <p class= "text-center">Contact No 0123456789</p>
+          <p><button class="button">Kamma@gmail.com</button></p>
+        </div>
+      </div>
+    </div>
+  
+    <div class="column">
+      <div class="card">
+        <img src="/static/images/Manish.jpg" alt="Jane" style="width:50%;margin-left: 100px;">
+        <div class="container">
+            <h2 class="text-center">Manish Kumar</h2>
+            <p class="title text-center">Manager</p>
+            <p class=" text-center">Lead the marketing team and suggest them the best marketing techniques for social media and other digital media campaigns. Grab the attention of customers and market the products and services.</p>
+            <p class= "text-center">Contact No 0234567890</p>
+            <p><button class="button">Kumar@gmail.com</button></p>
+        </div>
+      </div>
+    </div>
+  
+    <div class="column">
+      <div class="card">
+        <img src="/static/images/Kyle.jpg" alt="Jane" style="width:50%;margin-left: 100px;">
+        <div class="container">
+            <h2 class="text-center">Kyle James</h2>
+            <p class="title text-center">Assistant Manager</p>
+            <p class=" text-center">Ensures operational excellence by performing managerial tasks, such as scheduling, maintaining inventory, and/or evaluating employee performance. Regardless of the industry they work in industry.</p>
+            <p class= "text-center">Contact No 0897577564</p>
+            <p><button class="button">Kyle@gmail.com</button></p>
+        </div>
+      </div>
+    </div>
+  </div>
+  <style>
+    body {
+        background-color: #343a40;
+        }
+        </style>
+        
+    <!-- Footer -->
+    <footer class="page-footer font-small teal pt-4">
+    
+        <!-- Footer Text -->
+        <div class="container-fluid text-center text-md-left">
+      
+          <!-- Grid row -->
+          <div class="row">
+      
+            <!-- Grid column -->
+            <div class="">
+      
+              <!-- Content -->
+              <h2 class="text-uppercase font-weight-bold margin-bottom text-center text-white">Are you ready to automate your HR processes?</h2>
+              <p class="text-center text-uppercase text-white  ">94% of leaders anticipate continued changes for the HR function over the next three to five years, but only 18% state they have made the transition to a people-focused organisation already.</p>
+      
+            </div>
+            <!-- Grid column -->
+      
+            <hr class="clearfix w-100 d-md-none pb-3">
+      
+            <!-- Grid column -->
+            <div class="">
+      
+              <!-- Content -->
+              <h3 class="text-uppercase font-weight-bold text-center text-white">No contract, No credit card, No funny business, Just great HR software!</h3>
+              <p class="text-center text-uppercase text-white ">The best companies to work for enhance their people management processes with us.The best companies to work for enhance their people management processes with Leapsome.</p>
+      
+            </div>
+            <!-- Grid column -->
+      
+          </div>
+          <!-- Grid row -->
+      
+        </div>
+        <!-- Footer Text -->
+      
+      </footer>
+      <!-- Footer -->
+      
+      <!-- Footer -->
+      <footer class="page-footer font-small special-color-dark pt-4">
+      
+        <!-- Footer Elements -->
+        <div class="container">
+      
+          <!-- Social buttons -->
+          <ul class="list-unstyled list-inline text-center">
+            <li class="list-inline-item">
+              <a  href ="https://www.facebook.com/" class="btn-floating btn-fb mx-1">
+                <i class="fab fa-facebook-f"> </i>
+              </a>
+            </li>
+            <li class="list-inline-item">
+              <a href ="https://www.twitter.com/" class="btn-floating btn-tw mx-1">
+                <i class="fab fa-twitter"> </i>
+              </a>
+            </li>
+            <li class="list-inline-item">
+              <a href ="https://www.instagram.com/" class="btn-floating btn-gplus mx-1">
+                <i class="fab fa-instagram"> </i>
+              </a>
+            </li>
+            <li class="list-inline-item">
+              <a href ="https://www.linkedin.com/" class="btn-floating btn-li mx-1">
+                <i class="fab fa-linkedin-in"> </i>
+              </a>
+            </li>
+          </ul>
+          <!-- Social buttons -->
+      
+        </div>
+        <!-- Footer Elements -->
+    
+      
+      </footer>
+      <!-- Footer -->
+{% endblock %}
